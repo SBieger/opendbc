@@ -1,0 +1,117 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: XXX
+
+CM_ "Most of the following information was taken from vw_mqb_2010.dbc and other dbc files that were found on the internet.";
+CM_ "Some signals were reverse engineered in my car. So this document is not official and may contain errors.";
+
+BO_ 134 LWI_01: 8 XXX
+ SG_ LWI_VZ_Lenkradw_Geschw : 30|1@1+ (1,0) [0|1] "" XXX
+ SG_ LWI_Lenkradw_Geschw : 31|9@1+ (5,0) [0|2500] "Grad/s" XXX
+
+BO_ 159 LH_EPS_03: 8 XXX
+ SG_ EPS_Berechneter_LW : 16|12@1+ (0.15,0) [0|613.95] "Unit_DegreOfArc" XXX
+ SG_ EPS_VZ_BLW : 31|1@1+ (1,0) [0|1] "" XXX
+ SG_ EPS_HCA_Status : 32|4@1+ (1,0) [0|15] "" XXX
+ SG_ EPS_Lenkmoment : 40|10@1+ (1,0) [0|8] "Unit_centiNewtoMeter" XXX
+ SG_ EPS_Lenkmoment_QBit : 54|1@1+ (1,0) [0|1] "" XXX
+ SG_ EPS_VZ_Lenkmoment : 55|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 256 ESP_01: 8 XXX
+ SG_ ESP_Tastung_passiv : 49|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 257 ESP_02: 8 XXX
+ SG_ ESP_Gierrate : 40|14@1+ (0.01,0) [0|163.82] "Grad/s" XXX
+ SG_ ESP_VZ_Gierrate : 54|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 259 ESP_03: 8 XXX
+ SG_ ESP_VL_Radgeschw : 16|12@1+ (0.1,0) [0|409.2] "km/h" XXX
+ SG_ ESP_VR_Radgeschw : 28|12@1+ (0.1,0) [0|409.2] "km/h" XXX
+ SG_ ESP_HL_Radgeschw : 40|12@1+ (0.1,0) [0|409.2] "km/h" XXX
+ SG_ ESP_HR_Radgeschw : 52|12@1+ (0.1,0) [0|409.2] "km/h" XXX
+
+BO_ 261 Motor_03: 8 XXX
+ SG_ MO_Fahrpedalrohwert_01 : 48|8@1+ (0.4,0) [0|101.6] "%" XXX
+
+BO_ 262 ESP_05: 8 XXX
+ SG_ ESP_Bremsdruck : 16|10@1+ (0.3,-30) [-30|276.58978] "bar" XXX
+ SG_ ESP_Fahrer_bremst : 26|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 266 TSK_01: 8 XXX
+ SG_ KBI_Handbremse : 24|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 267 LS_01: 4 XXX
+ SG_ LS_01_BZ : 8|4@1+ (1,0) [0|15] "" XXX
+ SG_ LS_Hauptschalter : 12|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Abbrechen : 13|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Typ_Hauptschalter : 14|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Tip_Setzen : 16|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Tip_Hoch : 17|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Tip_Runter : 18|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Tip_Wiederaufnahme : 19|1@1+ (1,0) [0|1] "" XXX
+ SG_ LS_Verstellung_Zeitluecke : 20|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 268 TSK_02: 8 XXX
+ SG_ TSK_Status_GRA_ACC_01 : 16|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 294 HCA_01: 8 XXX
+ SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_0X3 : 12|4@1+ (1,0) [0|15] "" XXX
+ SG_ Assist_Torque : 16|14@1+ (1,0) [0|300] "Nm" XXX
+ SG_ Assist_Requested : 30|1@1+ (1,0) [0|1] "" XXX
+ SG_ Assist_VZ : 31|1@1+ (1,0) [0|1] "" XXX
+ SG_ HCA_Available : 32|1@1+ (1,0) [0|1] "" XXX
+ SG_ HCA_Standby : 33|1@1+ (1,0) [0|1] "" XXX
+ SG_ HCA_Active : 34|1@1+ (1,0) [0|1] "" XXX
+ SG_ SET_ME_0XFE : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_0X07 : 48|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 779 Kombi_01: 8 XXX
+ SG_ KBI_MFA_v_Einheit_01 : 17|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 867 Blinkmodi_01: 4 XXX
+ SG_ BM_links : 8|1@1+ (1,0) [0|1] "" XXX
+ SG_ BM_rechts : 9|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 1312 Airbag_02: 8 XXX
+ SG_ AB_Gurtschloss_FA : 40|2@1+ (1,0) [0|3] "" XXX
+ SG_ AB_Gurtschloss_BF : 42|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 1318 Gateway: 8 XXX
+ SG_ ZV_FT_offen : 44|1@1+ (1,0) [0|1] "" XXX
+
+VAL_ 159 EPS_HCA_Status 0 "disabled" 1 "initializing" 2 "fault" 3 "ready" 4 "rejected" 5 "active";
