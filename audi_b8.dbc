@@ -71,7 +71,8 @@ BO_ 262 ESP_05: 8 XXX
  SG_ ESP_Fahrer_bremst : 26|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 266 TSK_01: 8 XXX
- SG_ KBI_Handbremse : 24|1@1+ (1,0) [0|1] "" XXX
+ SG_ KBI_Handbremse : 31|1@1+ (1,0) [0|1] "" XXX
+ SG_ GearPosition : 24|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 267 LS_01: 4 XXX
  SG_ LS_01_BZ : 8|4@1+ (1,0) [0|15] "" XXX
@@ -103,6 +104,9 @@ BO_ 294 HCA_01: 8 XXX
 BO_ 779 Kombi_01: 8 XXX
  SG_ KBI_MFA_v_Einheit_01 : 17|1@1+ (1,0) [0|1] "" XXX
 
+BO_ 780 ACC_02: 8 XXX
+ SG_ ACC_Wunschgeschw : 12|10@1+ (0.32,0) [0.00|326.72] "Unit_KiloMeterPerHour"  XXX
+
 BO_ 867 Blinkmodi_01: 4 XXX
  SG_ BM_links : 8|1@1+ (1,0) [0|1] "" XXX
  SG_ BM_rechts : 9|1@1+ (1,0) [0|1] "" XXX
@@ -112,6 +116,9 @@ BO_ 1312 Airbag_02: 8 XXX
  SG_ AB_Gurtschloss_BF : 42|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 1318 Gateway: 8 XXX
- SG_ ZV_FT_offen : 44|1@1+ (1,0) [0|1] "" XXX
+ SG_ BCM1_Rueckfahrlicht_Schalter : 32|1@1+ (1,0) [0|1] "" XXX
+ SG_ ZV_FT_offen : 43|1@1+ (1,0) [0|1] "" XXX
 
 VAL_ 159 EPS_HCA_Status 0 "disabled" 1 "initializing" 2 "fault" 3 "ready" 4 "rejected" 5 "active";
+VAL_ 266 GearPosition 0 "D" 1 "N";
+
