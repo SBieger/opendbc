@@ -39,54 +39,65 @@ CM_ "Most of the following information was taken from vw_mqb_2010.dbc and other 
 CM_ "Some signals were reverse engineered in my car. So this document is not official and may contain errors.";
 
 BO_ 134 LWI_01: 8 XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ LWI_VZ_Lenkradw_Geschw : 30|1@1+ (1,0) [0|1] "" XXX
- SG_ LWI_Lenkradw_Geschw : 31|9@1+ (5,0) [0|2500] "Grad/s" XXX
+ SG_ LWI_Lenkradw_Geschw : 31|9@1+ (5,0) [0|2500] "Unit_DegreOfArcPerSecon" XXX
 
 BO_ 159 LH_EPS_03: 8 XXX
+ SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ EPS_Berechneter_LW : 16|12@1+ (0.15,0) [0|613.95] "Unit_DegreOfArc" XXX
  SG_ EPS_VZ_BLW : 31|1@1+ (1,0) [0|1] "" XXX
  SG_ EPS_HCA_Status : 32|4@1+ (1,0) [0|15] "" XXX
  SG_ EPS_Lenkmoment : 40|10@1+ (1,0) [0|8] "Unit_centiNewtoMeter" XXX
- SG_ EPS_Lenkmoment_QBit : 54|1@1+ (1,0) [0|1] "" XXX
  SG_ EPS_VZ_Lenkmoment : 55|1@1+ (1,0) [0|1] "" XXX
 
-BO_ 256 ESP_01: 8 XXX
+BO_ 256 ESP_21: 8 XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ ESP_Tastung_passiv : 49|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 257 ESP_02: 8 XXX
- SG_ ESP_Gierrate : 40|14@1+ (0.01,0) [0|163.82] "Grad/s" XXX
+ SG_ ESP_02_CRC : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ ESP_02_BZ : 8|4@1+ (1,0) [0|15] "" XXX
+ SG_ ESP_Gierrate : 40|14@1+ (0.01,0) [0|163.82] "Unit_DegreOfArcPerSecon" XXX
  SG_ ESP_VZ_Gierrate : 54|1@1+ (1,0) [0|1] "" XXX
 
-BO_ 259 ESP_03: 8 XXX
- SG_ ESP_VL_Radgeschw : 16|12@1+ (0.1,0) [0|409.2] "km/h" XXX
- SG_ ESP_VR_Radgeschw : 28|12@1+ (0.1,0) [0|409.2] "km/h" XXX
- SG_ ESP_HL_Radgeschw : 40|12@1+ (0.1,0) [0|409.2] "km/h" XXX
- SG_ ESP_HR_Radgeschw : 52|12@1+ (0.1,0) [0|409.2] "km/h" XXX
+BO_ 259 ESP_19: 8 XXX
+ SG_ ESP_VL_Radgeschw_02 : 16|12@1+ (0.1,0) [0|409.2] "Unit_KiloMeterPerHour" XXX
+ SG_ ESP_VR_Radgeschw_02 : 28|12@1+ (0.1,0) [0|409.2] "Unit_KiloMeterPerHour" XXX
+ SG_ ESP_HL_Radgeschw_02 : 40|12@1+ (0.1,0) [0|409.2] "Unit_KiloMeterPerHour" XXX
+ SG_ ESP_HR_Radgeschw_02 : 52|12@1+ (0.1,0) [0|409.2] "Unit_KiloMeterPerHour" XXX
 
-BO_ 261 Motor_03: 8 XXX
- SG_ MO_Fahrpedalrohwert_01 : 48|8@1+ (0.4,0) [0|101.6] "%" XXX
+BO_ 261 Motor_20: 8 XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|255] "" XXX
+ SG_ MO_Fahrpedalrohwert_01 : 48|8@1+ (0.4,0) [0|101.6] "Unit_PerCent" XXX
 
 BO_ 262 ESP_05: 8 XXX
- SG_ ESP_Bremsdruck : 16|10@1+ (0.3,-30) [-30|276.58978] "bar" XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
+ SG_ ESP_Bremsdruck : 16|10@1+ (0.3,-30) [-30|276.58978] "Unit_Bar" XXX
  SG_ ESP_Fahrer_bremst : 26|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 266 TSK_01: 8 XXX
+ SG_ TSK_01_CHK : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ TSK_01_BZ : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ KBI_Handbremse : 31|1@1+ (1,0) [0|1] "" XXX
  SG_ GearPosition : 24|1@1+ (1,0) [0|1] "" XXX
 
-BO_ 267 LS_01: 4 XXX
- SG_ LS_01_BZ : 8|4@1+ (1,0) [0|15] "" XXX
- SG_ LS_Hauptschalter : 12|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Abbrechen : 13|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Typ_Hauptschalter : 14|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Tip_Setzen : 16|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Tip_Hoch : 17|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Tip_Runter : 18|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Tip_Wiederaufnahme : 19|1@1+ (1,0) [0|1] "" XXX
- SG_ LS_Verstellung_Zeitluecke : 20|2@1+ (1,0) [0|3] "" XXX
+BO_ 267 GRA_ACC_01: 4 XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
+ SG_ GRA_Hauptschalter : 12|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Abbrechen : 13|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Typ_Hauptschalter : 14|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Tip_Setzen : 16|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Tip_Hoch : 17|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Tip_Runter : 18|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Tip_Wiederaufnahme : 19|1@1+ (1,0) [0|1] "" XXX
+ SG_ GRA_Verstellung_Zeitluecke : 20|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 268 TSK_02: 8 XXX
- SG_ TSK_Status_GRA_ACC_01 : 16|2@1+ (1,0) [0|3] "" XXX
+BO_ 268 TSK_06: 8 XXX
+ SG_ TSK_02_CHK : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ TSK_02_BZ : 8|4@1+ (1,0) [0|15] "" XXX
+ SG_ TSK_Status : 16|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 294 HCA_01: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
@@ -101,24 +112,24 @@ BO_ 294 HCA_01: 8 XXX
  SG_ SET_ME_0XFE : 40|8@1+ (1,0) [0|255] "" XXX
  SG_ SET_ME_0X07 : 48|8@1+ (1,0) [0|255] "" XXX
 
-BO_ 779 Kombi_01: 8 XXX
- SG_ KBI_MFA_v_Einheit_01 : 17|1@1+ (1,0) [0|1] "" XXX
+BO_ 779 Einheiten_01: 8 XXX
+ SG_ KBI_MFA_v_Einheit_02 : 17|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 780 ACC_02: 8 XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ ACC_Wunschgeschw : 12|10@1+ (0.32,0) [0.00|326.72] "Unit_KiloMeterPerHour"  XXX
 
-BO_ 867 Blinkmodi_01: 4 XXX
- SG_ BM_links : 8|1@1+ (1,0) [0|1] "" XXX
- SG_ BM_rechts : 9|1@1+ (1,0) [0|1] "" XXX
+BO_ 867 Blinkmodi_02: 4 XXX
+ SG_ Comfort_Signal_Left : 8|1@1+ (1,0) [0|1] "" XXX
+ SG_ Comfort_Signal_Right : 9|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 1312 Airbag_02: 8 XXX
  SG_ AB_Gurtschloss_FA : 40|2@1+ (1,0) [0|3] "" XXX
  SG_ AB_Gurtschloss_BF : 42|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 1318 Gateway: 8 XXX
+BO_ 1318 Gateway_72: 8 XXX
  SG_ BCM1_Rueckfahrlicht_Schalter : 32|1@1+ (1,0) [0|1] "" XXX
  SG_ ZV_FT_offen : 43|1@1+ (1,0) [0|1] "" XXX
 
 VAL_ 159 EPS_HCA_Status 0 "disabled" 1 "initializing" 2 "fault" 3 "ready" 4 "rejected" 5 "active";
 VAL_ 266 GearPosition 0 "D" 1 "N";
-
