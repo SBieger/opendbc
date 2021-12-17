@@ -131,5 +131,7 @@ BO_ 1318 Gateway_72: 8 XXX
  SG_ BCM1_Rueckfahrlicht_Schalter : 32|1@1+ (1,0) [0|1] "" XXX
  SG_ ZV_FT_offen : 43|1@1+ (1,0) [0|1] "" XXX
 
+CM_ SG_ 1318 ZV_FT_offen "Door open signal was not found on extended CAN. Using the interior light state as indicator instead.";
+
 VAL_ 159 EPS_HCA_Status 0 "disabled" 1 "initializing" 2 "fault" 3 "ready" 4 "rejected" 5 "active";
 VAL_ 266 GearPosition 0 "D" 1 "N";
